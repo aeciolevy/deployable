@@ -42,7 +42,7 @@ class App extends React.Component {
         </p>
         {this.state.user ? (
           <div>
-            <p>Welcome, {this.state.user.email}</p>
+            <p>Yo, {this.state.user.email}</p>
             <form onSubmit={this.updateUser.bind(this)}>
               <p>
                 <label htmlFor="profile-email">Email</label>{' '}
