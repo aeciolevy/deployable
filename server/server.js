@@ -6,7 +6,6 @@ const cookieSession = require('cookie-session');
 const flash = require('connect-flash');
 const bcrypt = require('bcrypt');
 const knexSettings = require('./knexfile');
-const knexLogger = require('knex-logger');
 const knex = require('knex')(knexSettings[process.env.NODE_ENV || 'development']);
 
 const app = express();
@@ -14,6 +13,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 if (process.env.NODE_ENV === 'development') {
+  const knexLogger = require('knex-logger');
   app.use(knexLogger(knex));
 }
 
