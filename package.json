@@ -7,7 +7,8 @@
   },
   "scripts": {
     "install": "./install.sh",
-    "postinstall": "./build.sh"
+    "postinstall": "./build.sh",
+    "start": "./start.sh"
   },
   "author": "David VanDusen <github@davidvandusen.com>",
   "license": "ISC",
