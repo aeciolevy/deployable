@@ -79,7 +79,7 @@ app.get('/logout', (req, res) => {
 
 app.post('/register', (req, res) => {
   if (!req.body.email || !req.body.password) {
-    req.flash('error', 'email and password are required');
+    req.flash('errors', 'email and password are required');
     res.redirect('/');
     return;
   }
