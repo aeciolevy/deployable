@@ -6,6 +6,7 @@
     "node": ">=6.10.1"
   },
   "scripts": {
+    "migrate": "./migrate.sh",
     "install": "./install.sh",
     "postinstall": "./build.sh",
     "start": "./start.sh"
